@@ -2,7 +2,7 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
-// Objetivo: No nível aventureiro você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+// Objetivo: No nível Mestre você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
   // Área para definição das variáveis da carta 1
@@ -15,6 +15,7 @@ int main() {
     int n_pontos_turisticos_1;
     float densidade_populacional_1;
     float pib_per_capita_1;
+    float superpoder_1;
 
    // Área para definição das variáveis da carta 2
 
@@ -27,6 +28,7 @@ int main() {
     int n_pontos_turisticos_2;
     float densidade_populacional_2;
     float pib_per_capita_2;
+    float superpoder_2;
 
   // Área para entrada de dados da carta 1
     
@@ -74,6 +76,7 @@ int main() {
     printf("Número de pontos turísticos: %d\n", n_pontos_turisticos_1);
     printf("Densidade populacional: %.2f hab/km²\n", densidade_populacional_1 = (float) populacao_1 / area_1);
     printf("PIB per capita: %.2f mil reais\n", pib_per_capita_1 = pib_1 / populacao_1);
+    printf("Superpoder: %.2f\n", superpoder_1= populacao_1 + area_1 + pib_1 + n_pontos_turisticos_1 + densidade_populacional_1 + pib_per_capita_1);
 
     // Área para exibição dos dados carta 2
     
@@ -87,6 +90,19 @@ int main() {
     printf("Número de pontos turísticos: %d\n", n_pontos_turisticos_2);
     printf("Densidade populacional: %.2f hab/km²\n", densidade_populacional_2 = (float) populacao_2 / area_2);
     printf("PIB per capita: %.2f mil reais\n", pib_per_capita_2 = pib_2 / populacao_2);
+    printf("Superpoder: %.2f\n", superpoder_2= populacao_2 + area_2 + pib_2 + n_pontos_turisticos_2 + densidade_populacional_2 + pib_per_capita_2);
+
+    // Área para comparação dos atributos
+    
+    printf("\nComparação das cartas:\n");
+    printf("\nPopulação: %d\n", populacao_1 > populacao_2);
+    printf("Área: %d\n", area_1 > area_2);
+    printf("PIB: %d\n", pib_1 > pib_2);
+    printf("Número de pontos turísticos: %d\n", n_pontos_turisticos_1 > n_pontos_turisticos_2);
+    printf("Densidade populacional: %d\n", densidade_populacional_1 < densidade_populacional_2);
+    printf("PIB per capita: %d\n", pib_per_capita_1 > pib_per_capita_2);
+    printf("Superpoder: %d\n", superpoder_1 > superpoder_2);
+
 
 return 0;
 } 
