@@ -2,7 +2,7 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+// Objetivo: No nível aventureiro você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
   // Área para definição das variáveis da carta 1
@@ -13,6 +13,8 @@ int main() {
     float area_1;
     float pib_1;
     int n_pontos_turisticos_1;
+    float densidade_populacional_1;
+    float pib_per_capita_1;
 
    // Área para definição das variáveis da carta 2
 
@@ -23,6 +25,8 @@ int main() {
     float area_2;
     float pib_2;
     int n_pontos_turisticos_2;
+    float densidade_populacional_2;
+    float pib_per_capita_2;
 
   // Área para entrada de dados da carta 1
     
@@ -68,6 +72,8 @@ int main() {
     printf("Área: %.2f km²\n", area_1);
     printf("PIB: %.2f Bilhões de reais\n", pib_1);
     printf("Número de pontos turísticos: %d\n", n_pontos_turisticos_1);
+    printf("Densidade populacional: %.2f hab/km²\n", densidade_populacional_1 = (float) populacao_1 / area_1);
+    printf("PIB per capita: %.2f mil reais\n", pib_per_capita_1 = pib_1 / populacao_1);
 
     // Área para exibição dos dados carta 2
     
@@ -79,6 +85,8 @@ int main() {
     printf("Área: %.2f km²\n", area_2);
     printf("PIB: %.2f Bilhões de reais\n", pib_2);
     printf("Número de pontos turísticos: %d\n", n_pontos_turisticos_2);
+    printf("Densidade populacional: %.2f hab/km²\n", densidade_populacional_2 = (float) populacao_2 / area_2);
+    printf("PIB per capita: %.2f mil reais\n", pib_per_capita_2 = pib_2 / populacao_2);
 
 return 0;
 } 
